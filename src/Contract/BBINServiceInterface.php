@@ -89,5 +89,23 @@ interface BBINServiceInterface {
      * @return mixed
      */
     function orderFailCheck(string $opCode, string $orderNo, string $vendorCode);
+
+    /**
+     * GF 會員帳號 轉成 BBIN 會員帳號
+     * @param string $opCode
+     * @param $vendor
+     * @param string $memberCode
+     * @return mixed
+     */
+    function accountToVendor(string $opCode, $vendor, string $memberCode);
+
+    /**
+     * BBIN 會員帳號 轉成 GF 會員帳號
+     * @param string $opCode
+     * @param $vendor
+     * @param string $vendorAccount
+     * @return mixed
+     */
+    function accountToOperator(string $opCode, $vendor, string $vendorAccount);
 }
 
