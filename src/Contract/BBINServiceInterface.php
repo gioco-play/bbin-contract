@@ -17,7 +17,7 @@ interface BBINServiceInterface {
      * @param string $backUrl
      * @return mixed
      */
-    function gameLaunch(string $opCode, string $account, string $gameCode, string $language, string $vendorCode, string $backUrl = null);
+    function gameLaunch(string $opCode, string $account, string $gameCode, string $language, string $vendorCode);
 
     /**
      * 遊戲詳情
