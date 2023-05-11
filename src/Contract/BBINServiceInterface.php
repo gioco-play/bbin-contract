@@ -36,9 +36,10 @@ interface BBINServiceInterface {
      * @param integer $pastMinutes
      * @param string $cacheKey
      * @param string $vendorCode
+     * @param string $function
      * @return mixed
      */
-    function betLogGrabber(string $opCode, int $pastMinutes, string $cacheKey, string $vendorCode);
+    function betLogGrabber(string $opCode, int $pastMinutes, string $cacheKey, string $vendorCode, string $function);
 
     /**
      * 全營商 抓取遊戲紀錄
